@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1 align="center">
     Improvement of the Coreference Resolution model through data augmentation based on LLM Adversarial filtering 
 </h1>
@@ -56,7 +55,3 @@ This will directly output the CoNLL-2012 scores, and, under the model/experiment
 ## 추가 구현 사항 ## 
 - 데이터 편향 분석 및 워드 클라우드 생성 코드 구축
 - data.py : 데이터 합성 fuction 추가
-=======
-# Improvement-of-the-Coreference-Resolution-model
-Improvement of the Coreference Resolution model through data augmentation based on LLM Adversarial filtering 
->>>>>>> d1fe5511a244987748478f2c41873e1408b5a012
