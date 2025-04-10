@@ -1,0 +1,6 @@
+{
+    "openai_api" : "",
+    "discriminate_model" : "sapienzanlp/maverick-mes-litbank",
+    "generate_model" : "gpt-4o-mini",
+    "filtering_case_index" : 0
+}

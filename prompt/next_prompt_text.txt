@@ -1,0 +1,38 @@
+'''You will be given a sentence in modified OntoNotes format along with coreference information. Your task is to replace any easily identifiable adjectives (such as `beautiful`) in the **Updated Coreference Words** with more challenging and sophisticated words that make the target reference less obvious. Follow these rules:
+
+### Guidelines:
+1. Identify the words in the sentence that correspond to each offset.
+2. Updated Coreference Offsets should be calculated step by step.
+3. For each remaining term (starting from the second), add **only one adjective** **immediately before** the term if it adds meaningful context.
+4. **Never add articles ('the', 'a')**, only one adjective.
+5. Ensure the adjective does not change the sentence's original meaning.
+6. **Avoid repeating the same word multiple times in sequence** (e.g., avoid adding 'large' twice in a row like 'large large').
+7. Use adjectives that are contextually relevant and meaningful. Avoid using too general adjectives like 'good', 'bad', 'nice', or nonsensical combinations.
+8. Adjectives should enrich the meaning or add useful information without making the description redundant or awkward.
+9. **If no suitable adjective can be added without disrupting the meaning or creating redundancy, do not add an adjective at all.** The coreference term should remain unchanged in such cases.
+10. **NEVER VIOLATE THE OUTPUT TEMPLATE**
+
+### Input:
+- Modified Sentence: {modified_ontonotes_sentence}
+- Original Coreference Words: {original_coreference_words}
+- Updated Coreference Words: {updated_coreference_words}
+- Updated Coreference Offsets: {updated_coreference_offsets}
+
+### Output Format:
+1. Further Updated Coreference Words: List of coreference terms showing any adjective changes made.
+
+### Example:
+Input:
+- Modified Sentence: ['Barack', 'Obama', 'is', 'traveling', 'to', 'Rome', '.', 'The', 'beautiful', 'city', 'is', 'sunny', 'and', 'the', 'president', 'plans', 'to', 'visit', 'its', 'most', 'important', 'attractions']
+- Original Coreference Words: [['Rome'], ['The', 'city'], ['its']]
+- Updated Coreference Words: [['Rome'], ['The', 'beautiful', 'city'], ['its']]
+- Updated Coreference Offsets: [[5, 5], [7, 9], [18, 18]]
+
+**Correct Output**:
+1. Further Updated Coreference Words : [['Rome'], ['The', 'ornate', 'city'], ['its']]
+
+### Explain the Output Example
+1. Updated Corefernece Words : 'beautiful' is changed as 'ornate' which is an appropriate adjective for the meaning of a sentence 
+
+Now, process the following input.
+'''

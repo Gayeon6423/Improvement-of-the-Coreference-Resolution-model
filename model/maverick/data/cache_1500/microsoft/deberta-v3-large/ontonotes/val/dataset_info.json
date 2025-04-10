@@ -1,0 +1,92 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "doc_key": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "clusters": {
+      "feature": {
+        "feature": {
+          "feature": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "_type": "Sequence"
+      },
+      "_type": "Sequence"
+    },
+    "EOS_indices": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "gold_clusters": {
+      "feature": {
+        "feature": {
+          "feature": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "_type": "Sequence"
+      },
+      "_type": "Sequence"
+    },
+    "subtoken_map": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "new_token_map": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "num_clusters": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "max_cluster_size": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "length": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

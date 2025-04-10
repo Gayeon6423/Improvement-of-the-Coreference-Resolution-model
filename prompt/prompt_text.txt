@@ -1,0 +1,37 @@
+"""You will be given a sentence in OntoNotes format along with a coreference cluster and its offsets. Your task is to add **only one adjective** that aligns with the given coreference term. The adjective must be placed **immediately before** the term within the sentence.
+
+### Guidelines:
+1. Identify the words in the sentence that correspond to each offset.
+2. Updated Coreference Offsets should be calculated step by step.
+3. For each remaining term (starting from the second), add **only one adjective** **immediately before** the term if it adds meaningful context.
+4. **Never add articles ('the', 'a')**, only one adjective.
+5. Ensure the adjective does not change the sentence's original meaning.
+6. **Avoid repeating the same word multiple times in sequence** (e.g., avoid adding 'large' twice in a row like 'large large').
+7. Use adjectives that are contextually relevant and meaningful. Avoid using too general adjectives like 'good', 'bad', 'nice', or nonsensical combinations.
+8. Adjectives should enrich the meaning or add useful information without making the description redundant or awkward.
+9. **If no suitable adjective can be added without disrupting the meaning or creating redundancy, do not add an adjective at all.** The coreference term should remain unchanged in such cases.
+10. **NEVER VIOLATE THE OUTPUT TEMPLATE**
+
+### Input:
+- Sentence: {ontonotes_sentence}
+- Coreference Offsets: {offsets} 
+- Coreference Words: {words} 
+
+### Output Format:
+1. Updated Coreference Words : The modified OntoNotes format sentence with adjectives added.
+
+### Example:
+Input:
+- Sentence: ['Barack', 'Obama', 'is', 'traveling', 'to', 'Rome', '.', 'The', 'city', 'is', 'sunny', 'and', 'the', 'president', 'plans', 'to', 'visit', 'its', 'most', 'important', 'attractions']
+- Coreference Offsets: [[5, 5], [7, 8], [17, 17]]
+- Coreference Words: [['Rome'], ['The', 'city'], ['its']]
+
+**Correct Output**:
+1. Updated Coreference Words : [['Rome'], ['The', 'picturesque', 'city'], ['its']]
+
+**Explanation**: 
+- 'picturesque' was added to 'city' to enrich the description without altering the intended meaning.
+- No adjective was added to 'Rome' or 'its' as it was unnecessary.
+
+Now, process the following input.
+"""

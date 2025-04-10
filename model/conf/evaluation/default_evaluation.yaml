@@ -1,0 +1,3 @@
+# put args here
+checkpoint: "-" # change(fine-tuning한 모델의 경로 기입)
+device: "cuda:0" #cpu

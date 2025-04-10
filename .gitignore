@@ -1,0 +1,27 @@
+# env
+venv/
+__pycache__/
+
+# test
+_test.py
+_test*.py
+_test.ipynb
+_test*.ipynb
+
+# file
+Note.md
+config.json
+
+# data
+tmp/
+Experiment/
+experiments/
+
+litbank/
+LitBank/
+LitBank_Case/
+NewLitBank_v2
+NewLitBank_Final_가연/
+
+litbank_augment.jsonlines
+litbank_final.jsonlines
