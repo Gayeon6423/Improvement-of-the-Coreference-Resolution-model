@@ -16,12 +16,12 @@ config.json
 tmp/
 Experiment/
 experiments/
+data/
 
 litbank/
 LitBank/
 LitBank_Case/
 NewLitBank_v2
-NewLitBank_Final_가연/
 
 litbank_augment.jsonlines
 litbank_final.jsonlines
